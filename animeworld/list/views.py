@@ -28,3 +28,8 @@ def addrecord(request):
         )
         anime.save()
         return HttpResponseRedirect(reverse('index'))
+
+def delete(request,id):
+        anime = Anime.objects.get(id=id)
+        anime.delete()
+        return HttpResponseRedirect(reverse("index"))
