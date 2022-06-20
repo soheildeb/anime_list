@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>update anime:</title>
+        </head>
+        <body style="background-color:slategrey"> 
+                <h1 style="text-align: center; color: rgb(43, 43, 43);">here you can update anime details update anime:</h1><hr><br>
+                <form action="updaterecord/{{ anime.id }}" method="post">
+                        {% csrf_token %}
+                        new name: <br>
+                        <input name="new_name" value="{{ anime.name }}">
+                        <br><br>
+                        new description: <br>
+                        <input name="new_description" value="{{ anime.description }}">
+                        <br><br>
+                        new episodes: <br>
+                        <input name="new_episodes" value="{{ anime.episodes }}">
+                        <br><br>
+                        <input type="submit" value="Submit">
+                </form>
+        </body>
+</html>
