@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>add anime</title>
+        </head>
+        <body style="background-color:slategrey" >
+                <h1 style="text-align: center; color: rgb(43, 43, 43);">here you can add anime to the list:</h1><hr><br>
+
+                <form action="addrecord/" method="post">
+                        {% csrf_token %}
+                        anime name: <br>
+                        <input name="name">
+                        <br><br>
+                        description of anime: <br>
+                        <input name="description">
+                        <br><br>
+                        number of episodes: <br>
+                        <input name="episodes">
+                        <br><br>
+                        <input type="submit" value="Submit">
+                </form>
+        </body>
+</html>

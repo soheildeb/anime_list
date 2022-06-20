@@ -3,8 +3,8 @@
         <head>
                 <title>anime list</title>
         </head>
-        <body>
-                <h1>anime list:</h1> <br> <hr>
+        <body style="background-color:slategrey">
+                <h1 style="text-align: center; color: rgb(43, 43, 43);" >anime list:</h1> <br> <hr>
                 <table border="1">
                         {% for x in list %}
                         <tr>
@@ -15,5 +15,6 @@
                         </tr>
                         {% endfor %}
                 </table>
+                <a href="add/">add anime</a>
         </body>
 </html>
